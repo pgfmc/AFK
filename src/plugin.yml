@@ -1,5 +1,5 @@
 name: AFK
-version: a.1.0.0
+version: 1.0.1
 api-version: 1.16
 author: CrimsonDart
 main: net.pgfmc.afk.Main

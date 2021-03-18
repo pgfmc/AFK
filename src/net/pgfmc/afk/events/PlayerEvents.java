@@ -1,10 +1,12 @@
 package net.pgfmc.afk.events;
 
 import org.bukkit.Bukkit;
+import org.bukkit.entity.Monster;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageEvent;
+import org.bukkit.event.entity.EntityTargetLivingEntityEvent;
 
 import net.ess3.api.IEssentials;
 
@@ -17,6 +19,20 @@ public class PlayerEvents implements Listener {
 		if (e.getEntity() instanceof Player) {
 			Player player = (Player) e.getEntity();
 			if (ess.getUser(player).isAfk()) {
+				
+				e.setCancelled(true);
+			}
+		}
+	}
+	
+	@EventHandler
+	public void deAggro(EntityTargetLivingEntityEvent e) { // -------------- disables aggro if a mob targets an AFK player
+	
+		if (e.getTarget() instanceof Player && e.getEntity() instanceof Monster) {
+			
+			Player player = (Player) e.getTarget();
+			if (ess.getUser(player).isAfk()) {
+				
 				e.setCancelled(true);
 			}
 		}

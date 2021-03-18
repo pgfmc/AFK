@@ -1,0 +1,6 @@
+name: AFK
+version: a.1.0.0
+api-version: 1.16
+author: CrimsonDart
+main: net.pgfmc.afk.Main
+description: adds more features to the essentials X afk feature

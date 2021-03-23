@@ -6,12 +6,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/EssentialsX-2.18.2.0.jar">
+	<classpathentry kind="lib" path="C:/ProgramData/javaLib/EssentialsX-2.18.2.0.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/spigot-1.16.5.jar">
+	<classpathentry kind="lib" path="C:/ProgramData/javaLib/spigot-1.16.5.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

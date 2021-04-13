@@ -1,2 +1,4 @@
 # AFK
-Invulnerability to AFK players - hooks into Essentials
+**AFK**
+*Invulnerability to AFK players*
+Hooks into Essentials
